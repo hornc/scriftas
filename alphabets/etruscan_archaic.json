@@ -1,0 +1,124 @@
+{
+	"name": "EtruscanArchaic",
+	"direction": "RTL",
+	"sources": ["https://archive.org/details/etruscanlanguage0000bonf/page/64",
+		    "Bonfante, J. H., 1983, The Etruscan language : an introduction"],
+	"letters": [
+		{
+			"name": "A",
+			"transcription": "a",
+			"strokes": [[1, 0, 1, 1],
+				    [1, 0.5, 0.3, 0.5],
+				    [1, 0, 0, 1, 0.2, 0.2]]
+		},
+		{
+			 "name": "C",
+			 "transcription": "k",
+			 "strokes": [[0, 0, 1, 1]]
+		},
+		{
+			 "name": "E",
+			 "transcription": "e",
+			 "strokes": [[0, 0, 1, 1]]
+		},
+		{
+			 "name": "W",
+			 "transcription": "w",
+			 "strokes": [[0, 0, 1, 1]]
+		},
+		{
+			 "name": "Z",
+			 "transcription": "ts",
+			 "strokes": [[0, 0, 1, 1]]
+		},
+		{
+			 "name": "H",
+			 "transcription": "h",
+			 "strokes": [[0, 0, 1, 1]]
+		},
+		{
+			 "name": "Th",
+			 "transcription": "th",
+			 "strokes": [[0, 0, 1, 1]]
+		},
+		{
+			 "name": "I",
+			 "transcription": "i",
+			 "strokes": [[0.5, 0, 0.5, 1]]
+		},
+		{
+			 "name": "K",
+			 "transcription": "k",
+			 "strokes": [[1, 0, 1, 1],
+				     [1, 0.5, 0, 0],
+				     [1, 0.5, 0, 1]
+				    ]
+		},
+		{
+			 "name": "L",
+			 "transcription": "l",
+			 "strokes": [[1, 0, 1, 1], [1, 1, 0.5, 0.7]]
+		},
+		{
+			 "name": "M",
+			 "transcription": "m",
+			 "strokes": [[0, 0, 1, 1]]
+		},
+		{
+			 "name": "N",
+			 "transcription": "n",
+			 "strokes": [[0, 0, 1, 1]]
+		},
+		{
+			 "name": "P",
+			 "transcription": "p",
+			 "strokes": [[0, 0, 1, 1]]
+		},
+		{
+			 "name": "S2",
+			 "transcription": "sh",
+			 "strokes": [[0, 0, 1, 1]]
+		},
+		{
+			 "name": "K2",
+			 "transcription": "k",
+			 "strokes": [[0, 0, 1, 1]]
+		},
+		{
+			 "name": "R",
+			 "transcription": "r",
+			 "strokes": [[0, 0, 1, 1]]
+		},
+		{
+			 "name": "S",
+			 "transcription": "s",
+			 "strokes": [[0, 0, 1, 1]]
+		},
+		{
+			 "name": "T",
+			 "transcription": "t",
+			 "strokes": [[0, 0, 1, 1]]
+		},
+		{
+			 "name": "U",
+			 "transcription": "u",
+			 "strokes": [[0, 0, 1, 1]]
+		},
+		{
+			 "name": "Ph",
+			 "transcription": "ph",
+			 "strokes": [[0, 0, 1, 1]]
+		},
+		{
+			 "name": "Kh",
+			 "transcription": "ch",
+			 "strokes": [[0, 0, 1, 1]]
+		},
+		{
+			 "name": "F",
+			 "transcription": "f",
+			 "strokes": [[0, 0, 1, 1]]
+		}
+	]
+}
+
