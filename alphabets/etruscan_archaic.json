@@ -3,6 +3,8 @@
 	"direction": "RTL",
 	"sources": ["https://archive.org/details/etruscanlanguage0000bonf/page/64",
 		    "Bonfante, J. H., 1983, The Etruscan language : an introduction"],
+	"width": 130,
+	"height": 180,
 	"letters": [
 		{
 			"name": "A",

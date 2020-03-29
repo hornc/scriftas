@@ -10,14 +10,14 @@ import sys
 
 body = """<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<!-- Created with Scriftas (0.1 alpha) (https://github.com/hornc/scriftas) -->
+<!-- Created with Scriftas (0.2 alpha) (https://github.com/hornc/scriftas) -->
 <svg xmlns="http://www.w3.org/2000/svg"
    version="1.0"
    id="%%NAME%%"
    x="0px"
    y="0px"
-   width="80"
-   height="110"
+   width="%%WIDTH%%"
+   height="%%HEIGHT%%"
 >
 %%CONTENT%%
 </svg>"""
@@ -25,16 +25,19 @@ body = """<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 # Summary output style
 STYLE = """
-    img {width:24px;}
+    img {width: 44px;}
     td {text-align: center;}
     td.incomplete {background-color: #fdd;}
 """
 
 
 def line(strokes, h, w, s):
+    h -= 2 * s
+    w -= 2 * s
+    style = 'fill="none" stroke="#000" stroke-width="%d" stroke-linecap="round" stroke-linejoin="round"' % s
     if len(strokes) == 4:
         x1, y1, x2, y2 = strokes
-        line = '<line fill="none" stroke="#000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" '
+        line = '<line %s ' % style
         line += 'x1="%s" y1="%s" x2="%s" y2="%s" />' % (int(x1 * w + s), int(y1 * h + s), int(x2 * w + s), int(y2 * h + s))
     else:  # len == 6
         x1, y1, x2, y2, cx, cy = strokes
@@ -44,7 +47,7 @@ def line(strokes, h, w, s):
         y2 = int(y2 * h + s) - y1
         cx = int(cx * w + s) - x1
         cy = int(cy * h + s) - y1
-        line = '<path fill="none" stroke="#000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" '
+        line = '<path %s ' % style
         line += 'd="M %s %s q %s %s %s %s" />' % (x1, y1, cx, cy, x2, y2,)
     return line
 
@@ -80,21 +83,21 @@ if __name__ == '__main__':
 
     infile = sys.argv[1] 
 
-    stroke_width = 12
-    h = 80 - stroke_width * 1.5
-    w = 110 - stroke_width * 1.5
-
     index = ''  # Index.html output overview
 
     with open(infile, 'r') as f:
         data = json.loads(f.read())
+
+    w = data.get('width', 130)
+    h = data.get('height', 180)
+    stroke_width = round((w**2 + h**2)**0.25)
 
     for letter in data.get('letters'): 
         name = letter_name(data['name'], letter['name'], letter.get('variant', 1))
         outfile = name + '.svg'
         output = body.replace('%%NAME%%', name)
         strokes = [line(st, h, w, stroke_width) for st in letter['strokes']]
-        output = output.replace('%%CONTENT%%', ''.join(strokes))
+        output = output.replace('%%CONTENT%%', ''.join(strokes)).replace('%%WIDTH%%', str(w)).replace('%%HEIGHT%%', str(h))
         with open(outfile, 'w') as f:
             f.write(output)
     print(output_summary(data))
