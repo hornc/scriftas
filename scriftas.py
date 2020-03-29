@@ -10,7 +10,7 @@ import sys
 
 body = """<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<!-- Created with Scriftas (0.2 alpha) (https://github.com/hornc/scriftas) -->
+<!-- Created with Scriftas (0.3 alpha) (https://github.com/hornc/scriftas) -->
 <svg xmlns="http://www.w3.org/2000/svg"
    version="1.0"
    id="%%NAME%%"
@@ -90,7 +90,7 @@ if __name__ == '__main__':
 
     w = data.get('width', 130)
     h = data.get('height', 180)
-    stroke_width = round((w**2 + h**2)**0.25)
+    stroke_width = round(min(w, h)**0.55)
 
     for letter in data.get('letters'): 
         name = letter_name(data['name'], letter['name'], letter.get('variant', 1))
