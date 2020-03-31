@@ -3,7 +3,7 @@ import json
 import sys
 
 """
-    Scriftas. 0.1 (alpha)
+    Scriftas. 0.3 (alpha)
     Utility to produce SVG glyphs of Old Italic scripts, and similar.
 """
 
@@ -82,8 +82,6 @@ if __name__ == '__main__':
     """
 
     infile = sys.argv[1] 
-
-    index = ''  # Index.html output overview
 
     with open(infile, 'r') as f:
         data = json.loads(f.read())
