@@ -14,112 +14,114 @@
 				    [1, 0, 0, 1, 0.2, 0.2]]
 		},
 		{
-			 "name": "C",
-			 "transcription": "k",
-			 "strokes": [[0, 0, 1, 1]]
+			"name": "C", "incomplete": true,
+			"transcription": "k",
+			"strokes": [[0, 0, 1, 1]]
 		},
 		{
-			 "name": "E",
-			 "transcription": "e",
-			 "strokes": [[0, 0, 1, 1]]
+			"name": "E", "incomplete": true,
+			"transcription": "e",
+			"strokes": [[0, 0, 1, 1]]
 		},
 		{
-			 "name": "W",
-			 "transcription": "w",
-			 "strokes": [[0, 0, 1, 1]]
+			"name": "W", "incomplete": true,
+			"transcription": "w",
+			"strokes": [[0, 0, 1, 1]]
 		},
 		{
-			 "name": "Z",
-			 "transcription": "ts",
-			 "strokes": [[0, 0, 1, 1]]
+			"name": "Z", "incomplete": true,
+			"transcription": "ts",
+			"strokes": [[0, 0, 1, 1]]
 		},
 		{
-			 "name": "H",
-			 "transcription": "h",
-			 "strokes": [[0, 0, 1, 1]]
+			"name": "H", "incomplete": true,
+			"transcription": "h",
+			"strokes": [[0, 0, 1, 1]]
 		},
 		{
-			 "name": "Th",
-			 "transcription": "th",
-			 "strokes": [[0, 0, 1, 1]]
+			"name": "Th", "incomplete": true,
+			"transcription": "th",
+			"strokes": [[0, 0, 1, 1]]
 		},
 		{
-			 "name": "I",
-			 "transcription": "i",
-			 "strokes": [[0.5, 0, 0.5, 1]]
+			"name": "I",
+			"transcription": "i",
+			"strokes": [[0.5, 0, 0.5, 1]]
 		},
 		{
-			 "name": "K",
-			 "transcription": "k",
-			 "strokes": [[1, 0, 1, 1],
+			"name": "K",
+			"transcription": "k",
+			"strokes": [[1, 0, 1, 1],
 				     [1, 0.5, 0, 0],
 				     [1, 0.5, 0, 1]
 				    ]
 		},
 		{
-			 "name": "L",
-			 "transcription": "l",
-			 "strokes": [[1, 0, 1, 1], [1, 1, 0.5, 0.7]]
+			"name": "L",
+			"transcription": "l",
+			"strokes": [[1, 0, 1, 1], [1, 1, 0.5, 0.7]]
 		},
 		{
-			 "name": "M",
-			 "transcription": "m",
-			 "strokes": [[0, 0, 1, 1]]
+			"name": "M", "incomplete": true,
+			"transcription": "m",
+			"strokes": [[0, 0, 1, 1]]
 		},
 		{
-			 "name": "N",
-			 "transcription": "n",
-			 "strokes": [[0, 0, 1, 1]]
+			"name": "N", "incomplete": true,
+			"transcription": "n",
+			"strokes": [[0, 0, 1, 1]]
 		},
 		{
-			 "name": "P",
-			 "transcription": "p",
-			 "strokes": [[0, 0, 1, 1]]
+			"name": "P", "incomplete": true,
+			"transcription": "p",
+			"strokes": [[1, 0, 1, 1]]
 		},
 		{
-			 "name": "S2",
-			 "transcription": "sh",
-			 "strokes": [[0, 0, 1, 1]]
+			"name": "S2", "incomplete": true,
+			"transcription": "sh",
+			"strokes": [[0, 0, 1, 1]]
 		},
 		{
-			 "name": "K2",
-			 "transcription": "k",
-			 "strokes": [[0, 0, 1, 1]]
+			"name": "K2", "incomplete": true,
+			"transcription": "k",
+			"strokes": [[0, 0, 1, 1]]
 		},
 		{
-			 "name": "R",
-			 "transcription": "r",
-			 "strokes": [[0, 0, 1, 1]]
+			"name": "R",
+			"variant": 3,
+			"transcription": "r",
+			"strokes": [[1, 0, 1, 1], [1, 0, 1, 0.7, -0.2, 0.35]]
 		},
 		{
-			 "name": "S",
-			 "transcription": "s",
-			 "strokes": [[0, 0, 1, 1]]
+			"name": "S",
+			"variant": 2,
+			"transcription": "s",
+			"strokes": [[0.2, 0, 0.8, 0.3], [0.8, 0.3, 0.2, 0.7], [0.2, 0.7, 0.8, 1]]
 		},
 		{
-			 "name": "T",
-			 "transcription": "t",
-			 "strokes": [[0, 0, 1, 1]]
+			"name": "T", "incomplete": true,
+			"transcription": "t",
+			"strokes": [[0, 0, 1, 1]]
 		},
 		{
-			 "name": "U",
-			 "transcription": "u",
-			 "strokes": [[0, 0, 1, 1]]
+			"name": "U", "incomplete": true,
+			"transcription": "u",
+			"strokes": [[0, 0, 1, 1]]
 		},
 		{
-			 "name": "Ph",
-			 "transcription": "ph",
-			 "strokes": [[0, 0, 1, 1]]
+			"name": "Ph", "incomplete": true,
+			"transcription": "ph",
+			"strokes": [[0, 0, 1, 1]]
 		},
 		{
-			 "name": "Kh",
-			 "transcription": "ch",
-			 "strokes": [[0, 0, 1, 1]]
+			"name": "Kh", "incomplete": true,
+			"transcription": "ch",
+			"strokes": [[0, 0, 1, 1]]
 		},
 		{
-			 "name": "F",
-			 "transcription": "f",
-			 "strokes": [[0, 0, 1, 1]]
+			"name": "F", "incomplete": true,
+			"transcription": "f",
+			"strokes": [[0, 0, 1, 1]]
 		}
 	]
 }

@@ -28,6 +28,18 @@
 			"strokes": [[1, 0, 1, 1], [0.5, 0, 0.5, 1],
 				    [1, 0, 0.5, 0.3]]
 		},
+		{
+			"name": "R",
+			"variant": 4,
+			"transcription": "r",
+			"strokes": [[1, 0, 1, 1], [1, 0, 1, 1, -0.4, 0.5]]
+		},
+		{
+			"name": "S",
+			"variant": 2,
+			"transcription": "s",
+			"strokes": [[0.2, 0, 0.8, 0.3], [0.8, 0.3, 0.2, 0.7], [0.2, 0.7, 0.8, 1]]
+		},
                 {
 			"name": "T",
 			"transcription": "t",
