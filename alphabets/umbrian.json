@@ -45,15 +45,14 @@
 				    ]
 		},
 		{
-			 "name": "Z", "incomplete": true,
+			 "name": "Z",
 			 "transcription": "ts",
-			 "strokes": [[0.5, 0, 0.5, 1]]
+			 "strokes": [[0.5, 0, 0.5, 1], [0.2, 0.1, 0.8, 0.4], [0.2, 0.6, 0.8, 0.9]]
 		},
 		{
-			 "name": "H","incomplete": true,
-
+			 "name": "H",
 			 "transcription": "h",
-			 "strokes": [[0, 0, 1, 1]]
+			 "strokes": [[0.5, 0.5, 1], [0.15, 0.3, 0.85, 0.7]]
 		},
 		{
 			 "name": "I",
@@ -96,16 +95,14 @@
 			 "strokes": [[1, 0, 1, 1], [1, 0, 1, 1, -1, 0.5]]
 		},
 		{
-			 "name": "S", "incomplete": true,
-
+			 "name": "S",
 			 "transcription": "s",
-			 "strokes": [[1, 0, 1, 1]]
+			 "strokes": [[0, 0, 1, 0.3], [1, 0.3, 0, 0.7], [0, 0.7, 1, 1]]
 		},
 		{
-			 "name": "T", "incomplete": true,
-
+			 "name": "T",
 			 "transcription": "t",
-			 "strokes": [[0.5, 0, 0.5, 1], [1, 0.2, 0, 0.7]]
+			 "strokes": [[0.5, 0, 0.5, 1], [0, 0, 1, 0.3]]
 		},
 		{
 			 "name": "U",
@@ -113,10 +110,9 @@
 			 "strokes": [[0, 0, 0.5, 1], [0.5, 1, 1, 0]]
 		},
 		{
-			 "name": "F", "incomplete": true,
-
+			 "name": "F",
 			 "transcription": "f",
-			 "strokes": [[1, 0, 1, 1]]
+			 "strokes": [[0.5, 0.25, 0.6], [0.5, 0.75, 0.7]]
 		},
 		{
 			 "name": "C",

@@ -3,14 +3,14 @@ import json
 import sys
 
 """
-    Scriftas. 0.3 (alpha)
+    Scriftas. 0.4 (alpha)
     Utility to produce SVG glyphs of Old Italic scripts, and similar.
 """
 
 
 body = """<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<!-- Created with Scriftas (0.3 alpha) (https://github.com/hornc/scriftas) -->
+<!-- Created with Scriftas (0.4 alpha) (https://github.com/hornc/scriftas) -->
 <svg xmlns="http://www.w3.org/2000/svg"
    version="1.0"
    id="%%NAME%%"
@@ -38,15 +38,23 @@ def line(strokes, h, w, s):
     if len(strokes) == 4:
         x1, y1, x2, y2 = strokes
         line = '<line %s ' % style
-        line += 'x1="%s" y1="%s" x2="%s" y2="%s" />' % (int(x1 * w + s), int(y1 * h + s), int(x2 * w + s), int(y2 * h + s))
-    else:  # len == 6
+        line += 'x1="%s" y1="%s" x2="%s" y2="%s" />' % (x1 * w + s, y1 * h + s, x2 * w + s, y2 * h + s)
+    elif len(strokes) == 3:
+        # circle
+        cx, cy, r = strokes
+        cx = cx * w + s
+        cy = cy * h + s
+        r = r * (min(w, h) + s) / 2
+        line = '<circle %s ' % style
+        line += 'cx="%s" cy="%s" r="%s" />' % (cx, cy, r)
+    elif len(strokes) == 6:
         x1, y1, x2, y2, cx, cy = strokes
-        x1 = int(x1 * w + s)
-        y1 = int(y1 * h + s)
-        x2 = int(x2 * w + s) - x1
-        y2 = int(y2 * h + s) - y1
-        cx = int(cx * w + s) - x1
-        cy = int(cy * h + s) - y1
+        x1 = x1 * w + s
+        y1 = y1 * h + s
+        x2 = x2 * w + s - x1
+        y2 = y2 * h + s - y1
+        cx = cx * w + s - x1
+        cy = cy * h + s - y1
         line = '<path %s ' % style
         line += 'd="M %s %s q %s %s %s %s" />' % (x1, y1, cx, cy, x2, y2,)
     return line
