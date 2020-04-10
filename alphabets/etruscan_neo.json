@@ -15,6 +15,46 @@
 				    [1, 0, 0, 1, 0.2, 0.2]]
 		},
 		{
+			"name": "C", "incomplete": true,
+			"transcription": "k",
+			"strokes": [[0, 0, 1, 1]]
+		},
+		{
+			"name": "E", "incomplete": true,
+			"transcription": "e",
+			"strokes": [[0, 0, 1, 1]]
+		},
+		{
+			"name": "V", "incomplete": true,
+			"transcription": "v",
+			"strokes": [[0, 0, 1, 1]]
+		},
+		{
+			"name": "Z", "incomplete": true,
+			"transcription": "ts",
+			"strokes": [[0, 0, 1, 1]]
+		},
+		{
+			"name": "H", "incomplete": true,
+			"transcription": "h",
+			"strokes": [[0, 0, 1, 1]]
+		},
+		{
+			"name": "Th", "incomplete": true,
+			"transcription": "th",
+			"strokes": [[0.5, 0.5, 1]]
+		},
+		{
+			"name": "I",
+			"transcription": "i",
+			"strokes": [[0.5, 0, 0.5, 1]]
+		},
+		{
+			"name": "L",
+			"transcription": "l",
+			"strokes": [[1, 0, 1, 1], [1, 1, 0.5, 0.7]]
+		},
+		{
 			"name": "M",
 			"transcription": "m",
 			"variant": 2,
@@ -27,6 +67,11 @@
 			"variant": 2,
 			"strokes": [[1, 0, 1, 1], [0.5, 0, 0.5, 1],
 				    [1, 0, 0.5, 0.3]]
+		},
+		{
+			"name": "P", "incomplete": true,
+			"transcription": "p",
+			"strokes": [[1, 0, 1, 1]]
 		},
 		{
 			"name": "SH",
@@ -56,6 +101,21 @@
 			"transcription": "u",
 			"variant": 2,
 			"strokes": [[0, 0.3, 0.5, 1], [0.5, 1, 1, 0.3]]
+		},
+		{
+			"name": "Ph",
+			"transcription": "ph",
+			"strokes": [[0.5, 0.5, 1], [0.5, 0, 0.5, 1]]
+		},
+		{
+			"name": "Kh", "incomplete": true,
+			"transcription": "ch",
+			"strokes": [[0, 0, 1, 1]]
+		},
+		{
+			"name": "F",
+			"transcription": "f",
+			"strokes": [[0.5, 0.25, 0.65], [0.5, 0.75, 0.65]]
 		}
 	]
 }
