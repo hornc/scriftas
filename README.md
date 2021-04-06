@@ -28,6 +28,6 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 [GNU General Public License](COPYING) for more details.
 
 ### Glyph source and output data
-The glyph data files located in [alphabets/](alhabets/)in .json format, and the resulting SVG output is dedicated to the public domain under
+The glyph data files located in [alphabets/](alphabets/) in .json format, and the resulting SVG output is dedicated to the public domain under
 https://creativecommons.org/publicdomain/zero/1.0/deed.en
 and https://commons.wikimedia.org/wiki/Template:PD-ancient-script
