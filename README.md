@@ -11,6 +11,18 @@ My Wikipedia user sandbox with current progress: https://en.wikipedia.org/wiki/U
 
 Oscan _scriftas_ = Latin _scriptae_  (nom. pl.)
 
+## About
+
+Alphabets are composed of *glyphs*. *Glyphs* are composed of one or more *strokes*. *Strokes* are represented as tuples:
+
+* **2-tuple:** Dot *(x₁, y₁)*
+* **3-tuple:** Circle *(x₁, y₁, r)*
+* **4-tuple:** Line (straight) *(x₁, y₁, x₂, y₂)*
+* **6-tuple:** Curve *(x₁, y₁, x₂, y₂, c<sub>x</sub>, c<sub>y</sub>)*
+
+The origin of each glyph *(0, 0)* is the top-left corner. The bottom-right corner is *(1, 1)*. The aspect ratio of the glyph is adjustable, and set by`height` and `width` in the alphabet.json file. `height = 180` and `width = 130` (pixels) is a sensible default.
+
+The aim of this project/tool is to store just the abstract shape of a glyph as a set of tuples. Factors like stroke width, style, overall scale, orientation, skew, and aspect ratio can then be adjusted at the alphabet level. New alphabets can be generated (in SVG format) from the basic glyph shapes to serve different purposes.
 
 ## License
 Scriftas - Utility to produce SVG glyphs of Old Italic scripts, and similar.
