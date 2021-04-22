@@ -1,5 +1,6 @@
 {
 	"name": "EtruscanArchaic",
+	"license": "CC0-1.0",
 	"direction": "RTL",
 	"sources": ["https://archive.org/details/etruscanlanguage0000bonf/page/64",
 		    "Bonfante, J. H., 1983, The Etruscan language : an introduction"],

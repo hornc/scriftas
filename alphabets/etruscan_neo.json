@@ -1,5 +1,6 @@
 {
 	"name": "Etruscan",
+	"license": "CC0-1.0",
 	"description": "Neo-Etruscan",
 	"direction": "RTL",
 	"sources": [ "Bonfante, J. H., 1983, The Etruscan language : an introduction",
