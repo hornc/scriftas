@@ -34,17 +34,21 @@ STYLE = """
 def line(strokes, h, w, s):
     h -= 2 * s
     w -= 2 * s
-    style = 'fill="none" stroke="#000" stroke-width="%d" stroke-linecap="round" stroke-linejoin="round"' % s
+    stroke_width = s * 2 / 3 if len(strokes) == 2 else s
+    style = 'fill="none" stroke="#000" stroke-width="%d" stroke-linecap="round" stroke-linejoin="round"' % stroke_width
     if len(strokes) == 4:
         x1, y1, x2, y2 = strokes
         line = '<line %s ' % style
         line += 'x1="%s" y1="%s" x2="%s" y2="%s" />' % (x1 * w + s, y1 * h + s, x2 * w + s, y2 * h + s)
-    elif len(strokes) == 3:
-        # circle
-        cx, cy, r = strokes
+    elif len(strokes) in (2, 3):
+        # dot / circle
+        cx, cy = strokes[:2]
+        if len(strokes) == 3:
+            r = strokes[2] * (min(w, h) + s) / 2
+        else:
+            r = s / 3
         cx = cx * w + s
         cy = cy * h + s
-        r = r * (min(w, h) + s) / 2
         line = '<circle %s ' % style
         line += 'cx="%s" cy="%s" r="%s" />' % (cx, cy, r)
     elif len(strokes) == 6:

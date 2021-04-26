@@ -41,9 +41,9 @@
 			"strokes": [[0, 0, 1, 1]]
 		},
 		{
-			"name": "Th", "incomplete": true,
+			"name": "Th",
 			"transcription": "th",
-			"strokes": [[0.5, 0.5, 1]]
+			"strokes": [[0.5, 0.5, 1], [0.5, 0.5]]
 		},
 		{
 			"name": "I",
@@ -70,9 +70,9 @@
 				    [1, 0, 0.5, 0.3]]
 		},
 		{
-			"name": "P", "incomplete": true,
+			"name": "P",
 			"transcription": "p",
-			"strokes": [[1, 0, 1, 1]]
+			"strokes": [[1, 0, 1, 1], [1, 0, 0.5, 0.3]]
 		},
 		{
 			"name": "SH",
@@ -109,9 +109,9 @@
 			"strokes": [[0.5, 0.5, 1], [0.5, 0, 0.5, 1]]
 		},
 		{
-			"name": "Kh", "incomplete": true,
+			"name": "Kh",
 			"transcription": "ch",
-			"strokes": [[0, 0, 1, 1]]
+			"strokes": [[0.5, 0, 0.5, 1], [0, 0.7, 0.5, 1], [1, 0.7, 0.5, 1]]
 		},
 		{
 			"name": "F",
