@@ -2,7 +2,7 @@
 	"name": "Umbrian",
 	"license": "CC0-1.0",
 	"direction": "RTL",
-	"sources": ["Buck, Carl Darling. 1904. A Grammar of Oscan and Umbrian: With a Collection of Inscriptions and a Glossary.",
+	"sources": ["Buck, Carl Darling (1904). A Grammar of Oscan and Umbrian: With a Collection of Inscriptions and a Glossary. Boston: Ginn. p. 23",
 		    "https://archive.org/details/grammarofoscanum00buckuoft/page/23"],
 	"width": 130,
 	"height": 180,
