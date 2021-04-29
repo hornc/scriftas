@@ -13,7 +13,7 @@ __version__ = '0.5.0'
 
 body = f"""<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<!-- Created with Scriftas v{__version__} (https://github.com/hornc/scriftas) -->
+<!-- This SVG glyph was created with Scriftas v{__version__} (https://github.com/hornc/scriftas) and is licensed under a %%LICENSE%% license. -->
 <svg xmlns="http://www.w3.org/2000/svg"
    version="1.0"
    id="%%NAME%%"
@@ -78,7 +78,7 @@ def fname(script, letter, variant=1):
 def output_markdown(json):
     glyphs = ''.join(['![%s](./%s) ' % (a['name'], fname(json['name'], a['name'], a.get('variant', 1))) for a in json['letters']])
     body = f"""# {json['name']}
-The SVG glyphs in this directory are licensed under {json['license']}.
+The SVG glyphs in this directory are licensed under a {json['license']} license.
 
 {glyphs}
 
@@ -122,7 +122,7 @@ if __name__ == '__main__':
         outfile = f'{args.output}/{name}.svg'
         output = body.replace('%%NAME%%', name)
         strokes = [line(st, h, w, stroke_width) for st in letter['strokes']]
-        output = output.replace('%%CONTENT%%', ''.join(strokes)).replace('%%WIDTH%%', str(w)).replace('%%HEIGHT%%', str(h))
+        output = output.replace('%%CONTENT%%', ''.join(strokes)).replace('%%WIDTH%%', str(w)).replace('%%HEIGHT%%', str(h)).replace('%%LICENSE%%', data.get('license', 'UNKNOWN'))
         with open(outfile, 'w') as f:
             f.write(output)
 
