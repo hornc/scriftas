@@ -115,5 +115,8 @@ if __name__ == '__main__':
         output = output.replace('%%CONTENT%%', ''.join(strokes)).replace('%%WIDTH%%', str(w)).replace('%%HEIGHT%%', str(h))
         with open(outfile, 'w') as f:
             f.write(output)
-    print(output_summary(data))
+
+    # Write HTML index file
+    with open(f'{args.output}/index.html', 'w') as index:
+        index.write(output_summary(data))
 
