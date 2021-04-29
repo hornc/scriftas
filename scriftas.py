@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import argparse
 import json
 import sys
 
@@ -94,10 +95,12 @@ if __name__ == '__main__':
     """
     Parse input and produce output files
     """
+    parser = argparse.ArgumentParser(description=f'Scriftas v{__version__}.')
+    parser.add_argument('infile', help='JSON format alphabet file')
+    parser.add_argument('-o', '--output', help='Output directory path to write SVG glyphs', default=".")
+    args = parser.parse_args()
 
-    infile = sys.argv[1] 
-
-    with open(infile, 'r') as f:
+    with open(args.infile, 'r') as f:
         data = json.loads(f.read())
 
     w = data.get('width', 130)
@@ -106,7 +109,7 @@ if __name__ == '__main__':
 
     for letter in data.get('letters'): 
         name = letter_name(data['name'], letter['name'], letter.get('variant', 1))
-        outfile = name + '.svg'
+        outfile = f'{args.output}/{name}.svg'
         output = body.replace('%%NAME%%', name)
         strokes = [line(st, h, w, stroke_width) for st in letter['strokes']]
         output = output.replace('%%CONTENT%%', ''.join(strokes)).replace('%%WIDTH%%', str(w)).replace('%%HEIGHT%%', str(h))
