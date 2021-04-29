@@ -3,14 +3,16 @@ import json
 import sys
 
 """
-    Scriftas. 0.4 (alpha)
+    Scriftas.
     Utility to produce SVG glyphs of Old Italic scripts, and similar.
 """
 
+__version__ = '0.5.0'
 
-body = """<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+body = f"""<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<!-- Created with Scriftas (0.4 alpha) (https://github.com/hornc/scriftas) -->
+<!-- Created with Scriftas v{__version__} (https://github.com/hornc/scriftas) -->
 <svg xmlns="http://www.w3.org/2000/svg"
    version="1.0"
    id="%%NAME%%"
