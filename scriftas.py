@@ -75,6 +75,16 @@ def fname(script, letter, variant=1):
     return letter_name(script, letter, variant) + '.svg'
 
 
+def output_markdown(json):
+    glyphs = ''.join(['![%s](./%s) ' % (a['name'], fname(json['name'], a['name'], a.get('variant', 1))) for a in json['letters']])
+    body = f"""# {json['name']}
+The SVG glyphs in this directory are licensed under {json['license']}.
+
+{glyphs}
+
+**Source:** [{json['sources'][0]}]({json['sources'][1]})"""
+    return body
+
 def output_summary(json):
     glyphs = ''.join(['<td class="%s"><img src="%s"></td>' % ('incomplete' if a.get('incomplete') else 'glyph', fname(json['name'], a['name'], a.get('variant', 1))) for a in json['letters']]) 
     transcription = ''.join(['<td>%s</td>' % a['transcription'] for a in json['letters']]) 
@@ -116,7 +126,9 @@ if __name__ == '__main__':
         with open(outfile, 'w') as f:
             f.write(output)
 
-    # Write HTML index file
+    # Write HTML and markdown summary files
     with open(f'{args.output}/index.html', 'w') as index:
         index.write(output_summary(data))
+    with open(f'{args.output}/README.md', 'w') as md:
+        md.write(output_markdown(data))
 
