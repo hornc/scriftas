@@ -23,7 +23,8 @@ body = f"""<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    height="%%HEIGHT%%"
 >
 %%CONTENT%%
-</svg>"""
+</svg>
+"""
 
 
 # Summary output style
@@ -94,10 +95,13 @@ def output_summary(json):
     <table>
       <tr>{glyphs}</tr>
       <tr>{transcription}</tr>
-    </table></body></html>""".format(name=json['name'], glyphs=glyphs,
-                transcription=transcription, 
-                url=json['sources'][1], bib=json['sources'][0],
-                style=STYLE)
+    </table></body></html>
+""".format(name=json['name'],
+           glyphs=glyphs,
+           transcription=transcription,
+           url=json['sources'][1],
+           bib=json['sources'][0],
+           style=STYLE)
     return body
 
 
