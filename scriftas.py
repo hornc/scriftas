@@ -120,10 +120,11 @@ if __name__ == '__main__':
     w = data.get('width', 130)
     h = data.get('height', 180)
     stroke_width = round(min(w, h)**0.55)
+    output_dir = f"{args.output}/{data['name'].lower()}"
 
     for letter in data.get('letters'): 
         name = letter_name(data['name'], letter['name'], letter.get('variant', 1))
-        outfile = f'{args.output}/{name}.svg'
+        outfile = f"{output_dir}/{name}.svg"
         output = body.replace('%%NAME%%', name)
         strokes = [line(st, h, w, stroke_width) for st in letter['strokes']]
         output = output.replace('%%CONTENT%%', ''.join(strokes)).replace('%%WIDTH%%', str(w)).replace('%%HEIGHT%%', str(h)).replace('%%LICENSE%%', data.get('license', 'UNKNOWN'))
@@ -131,8 +132,8 @@ if __name__ == '__main__':
             f.write(output)
 
     # Write HTML and markdown summary files
-    with open(f'{args.output}/index.html', 'w') as index:
+    with open(f'{output_dir}/index.html', 'w') as index:
         index.write(output_summary(data))
-    with open(f'{args.output}/README.md', 'w') as md:
+    with open(f'{output_dir}/README.md', 'w') as md:
         md.write(output_markdown(data))
 
