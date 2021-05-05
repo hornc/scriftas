@@ -1,9 +1,9 @@
 {
-	"name": "Umbrian",
+	"name": "Oscan",
 	"license": "CC0-1.0",
 	"direction": "RTL",
-	"sources": ["Buck, Carl Darling (1904). A Grammar of Oscan and Umbrian: With a Collection of Inscriptions and a Glossary. Boston: Ginn. p. 23",
-		    "https://archive.org/details/grammarofoscanum00buckuoft/page/23"],
+	"sources": ["Buck, Carl Darling (1904). A Grammar of Oscan and Umbrian: With a Collection of Inscriptions and a Glossary. Boston: Ginn. p. 22",
+		    "https://archive.org/details/grammarofoscanum00buckuoft/page/22"],
 	"width": 130,
 	"height": 180,
 	"letters": [
@@ -22,38 +22,45 @@
 				    [1, 0.5, 1, 1, -0.5, 0.75]]
 		},
 		{
+			"name": "C",
+			"transcription": "g",
+			"strokes": [[0.5, 0, 1, 0.5], [1, 0.5, 0.5, 1]]
+		},
+		{
 			"name": "D",
-			"transcription": "r̆",
+			"transcription": "d",
 			"strokes": [[1, 0, 1, 1],
-				    [0.3, 0, 1, 0.5, -0.4, 0.4]
-				    ]
+				    [1, 0, 1, 0.5, -0.5, 0.25],
+				    [1, 0.5, 0.25, 1]]
 		},
 		{
 			"name": "E",
 			"transcription": "e",
-			"strokes": [[1, 0, 1, 0.8],
-				    [1, 0, 0.2, 0.2],
-				    [1, 0.4, 0.2, 0.6],
-				    [1, 0.8, 0.2, 1]
+			"strokes": [[1, 0, 1, 1],
+				    [1, 0, 0, 0],
+				    [1, 0.5, 0.2, 0.5],
+				    [1, 1, 0, 1]
 				    ]
 		},
 		{
 			"name": "V",
 			"transcription": "v",
-			"strokes": [[1, 0, 1, 0.8],
-				    [1, 0, 0.2, 0.2],
-				    [1, 0.8, 0.2, 1]
+			"strokes": [[1, 0, 1, 1],
+				    [1, 0, 0.2, 0],
+				    [1, 1, 0.2, 1]
 				    ]
 		},
 		{
 			 "name": "Z",
-			 "transcription": "ts",
-			 "strokes": [[0.5, 0, 0.5, 1], [0.2, 0.1, 0.8, 0.4], [0.2, 0.6, 0.8, 0.9]]
+			 "transcription": "z",
+			 "strokes": [[0.5, 0, 0.5, 1], [0, 0, 1, 0], [0, 1, 1, 1]]
 		},
 		{
 			 "name": "H",
 			 "transcription": "h",
-			 "strokes": [[0.5, 0.5, 1], [0.15, 0.3, 0.85, 0.7]]
+			 "strokes": [[0, 0, 0, 1], [0, 0, 1, 0],
+				     [0, 1, 1, 1], [1, 0, 1, 1],
+			             [0, 0.5, 1, 0.5]]
 		},
 		{
 			 "name": "I",
@@ -88,7 +95,7 @@
 		{
 			 "name": "P",
 			 "transcription": "p",
-			 "strokes": [[1, 0, 1, 1], [1, 0, 0.5, 0.3]]
+			 "strokes": [[0.3, 0.2, 0.3, 1], [1, 0, 1, 1], [1, 0, 0.3, 0.2, 0.3, 0]]
 		},
 		{
 			 "name": "R",
@@ -103,7 +110,7 @@
 		{
 			 "name": "T",
 			 "transcription": "t",
-			 "strokes": [[0.5, 0, 0.5, 1], [0, 0, 1, 0.3]]
+			 "strokes": [[0.5, 0, 0.5, 1], [0, 0, 1, 0]]
 		},
 		{
 			 "name": "U",
@@ -116,9 +123,14 @@
 			 "strokes": [[0.5, 0.25, 0.6], [0.5, 0.75, 0.7]]
 		},
 		{
-			 "name": "C",
-			 "transcription": "ç",
-			 "strokes": [[1, 0, 1, 1], [1, 0.5, 1, 1, -1, 0.75]]
+			 "name": "Í",
+			 "transcription": "í",
+			 "strokes": [[0.5, 0, 0.5, 1], [0.5, 0.5, 0.9, 0.5]]
+		},
+		{
+			 "name": "Ú",
+			 "transcription": "ú",
+			 "strokes": [[0.5, 0], [0, 0, 0.5, 1], [0.5, 1, 1, 0]]
 		}
 	]
 }
