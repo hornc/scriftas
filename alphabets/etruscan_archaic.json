@@ -73,9 +73,9 @@
 			"strokes": [[0, 0, 1, 1]]
 		},
 		{
-			"name": "P", "incomplete": true,
+			"name": "P",
 			"transcription": "p",
-			"strokes": [[1, 0, 1, 1]]
+			"strokes": [[1, 0, 1, 1], [1, 0, 0.5, 0.3]]
 		},
 		{
 			"name": "SH",
