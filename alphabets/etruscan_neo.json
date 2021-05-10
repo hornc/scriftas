@@ -23,17 +23,22 @@
 		{
 			"name": "E", "incomplete": true,
 			"transcription": "e",
-			"strokes": [[1, 0, 1, 1]]
+			"strokes": [[1, 0, 1, 1], [0, 0.1, 1, 0.1],
+			            [0, 0.5, 1, 0.5],
+				    [0, 0.9, 1, 0.9]]
 		},
 		{
 			"name": "V", "incomplete": true,
 			"transcription": "v",
-			"strokes": [[1, 0, 1, 1]]
+			"strokes": [[1, 0, 1, 1], [0, 0.1, 1, 0.1],
+			            [0, 0.5, 1, 0.5]]
 		},
 		{
 			"name": "Z", "incomplete": true,
 			"transcription": "ts",
-			"strokes": [[0.5, 0, 0.5, 1]]
+			"strokes": [[0.5, 0, 0.5, 1],
+			            [0.2, 0.1, 0.8, 0],
+				    [0.2, 1, 0.8, 0.9]]
 		},
 		{
 			"name": "H", "incomplete": true,
