@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 import json
+import os
 import sys
 
 """
@@ -121,6 +122,7 @@ if __name__ == '__main__':
     h = data.get('height', 180)
     stroke_width = round(min(w, h)**0.55)
     output_dir = f"{args.output}/{data['name'].lower()}"
+    os.makedirs(output_dir, exist_ok=True)
 
     for letter in data.get('letters'): 
         name = letter_name(data['name'], letter['name'], letter.get('variant', 1))
