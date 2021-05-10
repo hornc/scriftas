@@ -36,11 +36,12 @@ STYLE = """
 """
 
 
-def line(strokes, h, w, s):
+def line(strokes, h, w, s, incomplete=False):
     h -= 2 * s
     w -= 2 * s
     stroke_width = s * 2 / 3 if len(strokes) == 2 else s
-    style = 'fill="none" stroke="#000" stroke-width="%d" stroke-linecap="round" stroke-linejoin="round"' % stroke_width
+    stroke_style = '#999' if incomplete else '#000'
+    style = f'fill="none" stroke="{stroke_style}" stroke-width="{stroke_width}" stroke-linecap="round" stroke-linejoin="round"'
     if len(strokes) == 4:
         x1, y1, x2, y2 = strokes
         line = '<line %s ' % style
@@ -128,7 +129,8 @@ if __name__ == '__main__':
         name = letter_name(data['name'], letter['name'], letter.get('variant', 1))
         outfile = f"{output_dir}/{name}.svg"
         output = body.replace('%%NAME%%', name)
-        strokes = [line(st, h, w, stroke_width) for st in letter['strokes']]
+        incomplete = letter.get('incomplete')
+        strokes = [line(st, h, w, stroke_width, incomplete) for st in letter['strokes']]
         output = output.replace('%%CONTENT%%', ''.join(strokes)).replace('%%WIDTH%%', str(w)).replace('%%HEIGHT%%', str(h)).replace('%%LICENSE%%', data.get('license', 'UNKNOWN'))
         with open(outfile, 'w') as f:
             f.write(output)
