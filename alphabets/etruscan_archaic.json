@@ -2,8 +2,8 @@
 	"name": "EtruscanArchaic",
 	"license": "CC0-1.0",
 	"direction": "RTL",
-	"sources": ["https://archive.org/details/etruscanlanguage0000bonf/page/64",
-		    "Bonfante, J. H., 1983, The Etruscan language : an introduction"],
+	"sources": ["Bonfante, J. H., 1983, The Etruscan language : an introduction",
+		    "https://archive.org/details/etruscanlanguage0000bonf/page/64"],
 	"width": 130,
 	"height": 180,
 	"letters": [
@@ -15,34 +15,45 @@
 				    [1, 0, 0, 1, 0.2, 0.2]]
 		},
 		{
-			"name": "C", "incomplete": true,
+			"name": "C",
 			"transcription": "k",
-			"strokes": [[0, 0, 1, 1]]
+			"strokes": [[0.3, 0, 0.3, 1, 1.6, 0.5]]
 		},
 		{
-			"name": "E", "incomplete": true,
+			"name": "E",
 			"transcription": "e",
-			"strokes": [[0, 0, 1, 1]]
+			"strokes": [[1, 0, 1, 0.95],
+			            [0.2, 0.2, 1, 0],
+			            [0.2, 0.6, 1, 0.4],
+				    [0.2, 1, 1, 0.8]]
 		},
 		{
-			"name": "W", "incomplete": true,
+			"name": "W",
 			"transcription": "w",
-			"strokes": [[0, 0, 1, 1]]
+			"strokes": [[1, 0, 1, 0.95],
+		                    [0.2, 0.2, 1, 0],
+			            [0.4, 0.6, 1, 0.45]]
 		},
 		{
-			"name": "Z", "incomplete": true,
+			"name": "Z",
 			"transcription": "ts",
-			"strokes": [[0, 0, 1, 1]]
+			"strokes": [[0.5, 0.1, 0.5, 0.9],
+			            [0.2, 0.1, 0.8, 0],
+				    [0.2, 1, 0.8, 0.9]]
 		},
 		{
-			"name": "H", "incomplete": true,
+			"name": "H",
 			"transcription": "h",
-			"strokes": [[0, 0, 1, 1]]
+			"strokes": [[0.1, 0, 0.1, 1],
+			            [1, 0, 1, 1],
+			            [0.1, 0, 1, 0],
+				    [0.1, 1, 1, 1],
+			            [0.1, 0.5, 1, 0.5]]
 		},
 		{
-			"name": "Th", "incomplete": true,
+			"name": "Th",
 			"transcription": "th",
-			"strokes": [[0.5, 0.5, 1]]
+			"strokes": [[0.5, 0.5, 1], [0.1, 0.25, 0.9, 0.75], [0.9, 0.25, 0.1, 0.75]]
 		},
 		{
 			"name": "I",
@@ -53,9 +64,8 @@
 			"name": "K",
 			"transcription": "k",
 			"strokes": [[1, 0, 1, 1],
-				     [1, 0.5, 0, 0],
-				     [1, 0.5, 0, 1]
-				    ]
+				    [1, 0.5, 0.3, 0.05],
+				    [1, 0.5, 0.3, 0.95]]
 		},
 		{
 			"name": "L",
@@ -63,14 +73,20 @@
 			"strokes": [[1, 0, 1, 1], [1, 1, 0.5, 0.7]]
 		},
 		{
-			"name": "M", "incomplete": true,
+			"name": "M",
 			"transcription": "m",
-			"strokes": [[0, 0, 1, 1]]
+			"strokes": [[1, 0, 1, 1],
+				    [1, 0, 0.7, 0.2],
+				    [0.7, 0.2, 0.4, 0],
+				    [0.4, 0, 0.25, 0.2],
+				    [0.25, 0.2, 0.1, 0.05]]
 		},
 		{
-			"name": "N", "incomplete": true,
+			"name": "N",
 			"transcription": "n",
-			"strokes": [[0, 0, 1, 1]]
+			"strokes": [[1, 0, 1, 1],
+				    [1, 0, 0.7, 0.2],
+				    [0.7, 0.2, 0.35, 0]]
 		},
 		{
 			"name": "P",
@@ -83,9 +99,9 @@
 			"strokes": [[0, 0, 0, 1], [0, 0, 0.5, 0.3], [0.5, 0.3, 1, 0], [1, 0, 1, 1]]
 		},
 		{
-			"name": "K2", "incomplete": true,
+			"name": "K2",
 			"transcription": "k",
-			"strokes": [[0, 0, 1, 1]]
+			"strokes": [[0.5, 0.3, 0.8], [0.5, 0.65, 0.5, 1]]
 		},
 		{
 			"name": "R",
@@ -100,24 +116,24 @@
 			"strokes": [[0.2, 0, 0.8, 0.3], [0.8, 0.3, 0.2, 0.7], [0.2, 0.7, 0.8, 1]]
 		},
 		{
-			"name": "T", "incomplete": true,
+			"name": "T",
 			"transcription": "t",
-			"strokes": [[0, 0, 1, 1]]
+			"strokes": [[0.5, 0.1, 0.5, 1], [0, 0.1, 1, 0]]
 		},
 		{
-			"name": "U", "incomplete": true,
+			"name": "U",
 			"transcription": "u",
-			"strokes": [[0, 0, 1, 1]]
+			"strokes": [[1, 0, 0.5, 1], [0.1, 0.1, 0.7, 0.5]]
 		},
 		{
-			"name": "Ph", "incomplete": true,
+			"name": "Ph",
 			"transcription": "ph",
-			"strokes": [[0, 0, 1, 1]]
+			"strokes": [[0.5, 0.5, 1], [0.5, 0, 0.5, 1]]
 		},
 		{
-			"name": "Kh", "incomplete": true,
+			"name": "Kh",
 			"transcription": "ch",
-			"strokes": [[0, 0, 1, 1]]
+			"strokes": [[0.5, 0, 0.5, 1], [0, 0, 0.5, 0.4], [0.5, 0.4, 1, 0]]
 		},
 		{
 			"name": "F",
