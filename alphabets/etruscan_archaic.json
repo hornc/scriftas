@@ -20,7 +20,7 @@
 			"strokes": [[0.3, 0, 0.3, 1, 1.6, 0.5]]
 		},
 		{
-			"name": "E", "incomplete": true,
+			"name": "E",
 			"transcription": "e",
 			"strokes": [[1, 0, 1, 0.95],
 			            [0.2, 0.2, 1, 0],
@@ -28,7 +28,7 @@
 				    [0.2, 1, 1, 0.8]]
 		},
 		{
-			"name": "W", "incomplete": true,
+			"name": "W",
 			"transcription": "w",
 			"strokes": [[1, 0, 1, 0.95],
 		                    [0.2, 0.2, 1, 0],
