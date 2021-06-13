@@ -6,8 +6,6 @@ For use in generating families of similar styled and scaled glyphs for represent
 
 Developed to fill in the gaps on Wikipedia's https://en.wikipedia.org/wiki/Old_Italic_scripts#Alphabets_related_to_Etruscan
 
-My Wikipedia user sandbox with current progress: https://en.wikipedia.org/wiki/User:Salpynx/sandbox#From_Old_Italic_scripts 
-
 
 Oscan _scriftas_ = Latin _scriptae_  (nom. pl.)
 
@@ -24,8 +22,33 @@ The origin of each glyph *(0, 0)* is the top-left corner. The bottom-right corne
 
 The aim of this project/tool is to store just the abstract shape of a glyph as a set of tuples. Factors like stroke width, style, overall scale, orientation, skew, and aspect ratio can then be adjusted at the alphabet level. New alphabets can be generated (in SVG format) from the basic glyph shapes to serve different purposes.
 
-## License
-Scriftas - Utility to produce SVG glyphs of Old Italic scripts, and similar.
+The glyph data is stored in JSON format and processed to produce SVG output. The intent is that the JSON only stores the basic shape of the strokes, and a rendering engine can produde the final stroke in any way, whether it simulates engraving in clay or stone, produces neat SVGs with even width strokes, or converts to CNC G codes for actual engraving (not implemented here).
+
+Single glyph example (Oscan P):
+
+	{
+		 "name": "P",
+		 "transcription": "p",
+		 "strokes": [[0.3, 0.2, 0.3, 1], [1, 0, 1, 1], [1, 0, 0.3, 0.2, 0.3, 0]]
+	}
+The full alphabet, with source reference, can be found in [alphabets/oscan.json](alphabets/oscan.json)
+
+## Example Full Scripts
+The following scripts are included in the distribution:
+* [Etruscan](output/etruscan/README.md)
+* [Etruscan (Archaic)](output/etruscanarchaic/README.md)
+* [Oscan](output/oscan/README.md)
+* [Umbrian](output/umbrian/README.md)
+
+## Comments, Requests, and Contributions
+
+Comments and suggestions are welcome, feel free to open an issue on this project's Github: https://github.com/hornc/scriftas
+
+## Licenses
+### Software
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+[Scriftas](https://github.com/hornc/scriftas) - Utility to produce SVG glyphs of Old Italic scripts, and similar.
 
 Copyright © 2020-2021 Charles Horn.
 
@@ -40,6 +63,10 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 [GNU General Public License](COPYING) for more details.
 
 ### Glyph source and output data
+[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+
 The glyph data files located in [alphabets/](alphabets/) in .json format, and the resulting SVG output is dedicated to the public domain under
-https://creativecommons.org/publicdomain/zero/1.0/deed.en
-and https://commons.wikimedia.org/wiki/Template:PD-ancient-script
+[CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
+
+The images in [output/](output/) also fall under the Wikimedia commons [Ancient scripts public domain declaration](https://commons.wikimedia.org/wiki/Template:PD-ancient-script):
+> "[these images are] in the public domain because [they are] an SVG representaion of an ancient script."
