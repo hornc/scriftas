@@ -31,7 +31,10 @@ Single glyph example (Oscan P):
 		 "transcription": "p",
 		 "strokes": [[0.3, 0.2, 0.3, 1], [1, 0, 1, 1], [1, 0, 0.3, 0.2, 0.3, 0]]
 	}
-The full alphabet, with source reference, can be found in [alphabets/oscan.json](alphabets/oscan.json)
+Produces:
+![Oscan P](output/oscan/OscanP-01.svg)
+
+The full Oscan alphabet, with source reference, can be found in [alphabets/oscan.json](alphabets/oscan.json)
 
 ## Example Full Scripts
 The following scripts are included in the distribution:
