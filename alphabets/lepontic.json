@@ -1,0 +1,137 @@
+{
+	"name": "Lepontic",
+	"license": "CC0-1.0",
+	"description": "Lepontic, 3rd–2nd c. BCE",
+	"direction": "RTL",
+	"sources": [ "De Marinis, R.C. (1991). I Celti Golasecchiani. In Moscati, Sabatino (ed.). I Celti (in Italian). Milan: Bompiani. ISBN 88-452-1753-1, p. 94.",
+			"https://web.archive.org/web/20110302015510/http://www.univie.ac.at/indogermanistik/download/Stifter/oldcelt2008_2_lepontic.pdf",
+			"Lexicon Leponticum",
+			"https://lexlep.univie.ac.at/wiki/Characters"],
+	"width": 130,
+	"height": 180,
+	"letters": [
+		{
+			"name": "A",
+			"transcription": "a",
+			"strokes": [[0.6, 0, 1, 1],
+				    [0.6, 0, 0, 0.8],
+				    [0.75, 0.35, 0.3, 0.9]]
+		},
+		{
+			"name": "E",
+			"transcription": "e",
+			"strokes": [[0.8, 0, 0.8, 1],
+			            [0.2, 0.3, 0.8, 0.1],
+			            [0.2, 0.6, 0.8, 0.4],
+				    [0.2, 0.9, 0.8, 0.7]]
+		},
+		{
+			"name": "V",
+			"transcription": "v",
+			"strokes": []
+		},
+		{
+			"name": "Z",
+			"incomplete": true,
+			"transcription": "z",
+			"strokes": [[0.3, 0, 1, 1],
+			            [0.2, 0.4, 1, 0.1],
+				    [0.2, 0.7, 1, 0.4]]
+		},
+		{
+			"name": "θ",
+			"transcription": "θ",
+			"strokes": []
+		},
+		{
+			"name": "I",
+			"transcription": "i",
+			"strokes": [[0.5, 0, 0.5, 1]]
+		},
+		{
+			"name": "K",
+			"variant": 1,
+			"transcription": "k",
+			"strokes": [[1, 0, 1, 1],
+				    [1, 0.5, 0.3, 0.2],
+				    [1, 0.5, 0.3, 0.8]]
+		},
+		{
+			"name": "K",
+			"variant": 2,
+			"transcription": "k",
+			"strokes": [[1, 0, 1, 1],
+				    [1, 0.5, 0.3, 0.05],
+				    [1, 0.5, 0.3, 0.95]]
+		},
+		{
+			"name": "L",
+			"transcription": "l",
+			"strokes": [[1, 0, 1, 1], [1, 1, 0.5, 0.7]]
+		},
+		{
+			"name": "M",
+			"transcription": "m",
+			"strokes": [[1, 0, 1, 1],
+				    [1, 0, 0.7, 0.2],
+				    [0.7, 0.2, 0.4, 0],
+				    [0.4, 0, 0.25, 0.2],
+				    [0.25, 0.2, 0.1, 0.05]]
+		},
+		{
+			"name": "N",
+			"transcription": "n",
+			"strokes": [[1, 0, 1, 1],
+				    [1, 0, 0.7, 0.2],
+				    [0.7, 0.2, 0.35, 0]]
+		},
+		{
+			"name": "P",
+			"transcription": "p",
+			"strokes": [[1, 0, 1, 1], [1, 0, 0.5, 0.3]]
+		},
+		{
+			"name": "SH",
+			"transcription": "ś",
+			"strokes": [[0, 0, 0, 1], [0, 0, 1, 1], [1, 0, 0, 1], [1, 0, 1, 1]]
+		},
+		{
+			"name": "R",
+			"transcription": "r",
+			"strokes": [[1, 0, 1, 1], [1, 0, 1, 1, -0.4, 0.5]]
+		},
+		{
+			"name": "S",
+			"variant": 1,
+			"incomplete": true,
+			"transcription": "s",
+			"strokes": [[0.2, 0, 0.8, 0.3], [0.8, 0.3, 0.2, 0.7], [0.2, 0.7, 0.8, 1]]
+		},
+		{
+			"name": "S",
+			"variant": 2,
+			"transcription": "s",
+			"strokes": [[0.2, 0, 0.8, 0.3], [0.8, 0.3, 0.2, 0.7], [0.2, 0.7, 0.8, 1]]
+		},
+                {
+			"name": "T",
+			"transcription": "t",
+			"strokes": [[0, 0, 1, 1], [1, 0, 0, 1]]
+		},
+		{
+			 "name": "U",
+			 "transcription": "u",
+			 "strokes": [[0, 0, 0.5, 1], [0.5, 1, 1, 0]]
+		},
+		{
+			"name": "χ",
+			"transcription": "χ",
+			"strokes": [[0.5, 0, 0.5, 1], [0, 0, 0.5, 1], [1, 0, 0.5, 1]]
+		},
+		{
+			"name": "O",
+			"transcription": "o",
+			"strokes": [[0.5, 0.5, 1]]
+		}
+	]
+}
