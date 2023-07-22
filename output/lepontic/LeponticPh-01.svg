@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- This SVG glyph was created with Scriftas v0.5.0 (https://github.com/hornc/scriftas) and is licensed under a CC0-1.0 license. -->
+<svg xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   id="LeponticPh-01"
+   x="0px"
+   y="0px"
+   width="130"
+   height="180"
+>
+<circle fill="none" stroke="#000" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" cx="65.0" cy="90.0" r="57.5" /><line fill="none" stroke="#000" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" x1="65.0" y1="15" x2="65.0" y2="165" />
+</svg>
