@@ -9,5 +9,5 @@
    width="130"
    height="180"
 >
-<line fill="none" stroke="#000" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" x1="75.0" y1="15" x2="115" y2="165" /><line fill="none" stroke="#000" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" x1="75.0" y1="15" x2="15" y2="135.0" /><line fill="none" stroke="#000" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" x1="90.0" y1="67.5" x2="45.0" y2="150.0" />
+<line fill="none" stroke="#000" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" x1="75.0" y1="15" x2="115" y2="165" /><line fill="none" stroke="#000" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" x1="75.0" y1="15" x2="15" y2="135.0" /><line fill="none" stroke="#000" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" x1="90.0" y1="75.0" x2="45.0" y2="165" />
 </svg>
