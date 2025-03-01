@@ -9,5 +9,5 @@
    width="130"
    height="180"
 >
-
+<circle fill="none" stroke="#000" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" cx="65.0" cy="90.0" r="57.5" /><circle fill="none" stroke="#000" stroke-width="10.0" stroke-linecap="round" stroke-linejoin="round" cx="65.0" cy="90.0" r="5.0" />
 </svg>

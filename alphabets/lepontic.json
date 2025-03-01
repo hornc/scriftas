@@ -26,22 +26,16 @@
 				    [0.2, 0.9, 0.8, 0.7]]
 		},
 		{
-			"name": "V",
-			"transcription": "v",
-			"strokes": []
-		},
-		{
 			"name": "Z",
-			"incomplete": true,
 			"transcription": "z",
-			"strokes": [[0.3, 0, 1, 1],
-			            [0.2, 0.4, 1, 0.1],
-				    [0.2, 0.7, 1, 0.4]]
+			"strokes": [[0.2, 0, 0.9, 1],
+			            [0.01, 0.5, 0.81, 0],
+				    [0.2, 0.8, 1, 0.3]]
 		},
 		{
 			"name": "Th",
 			"transcription": "θ",
-			"strokes": []
+			"strokes": [[0.5, 0.5, 1], [0.5, 0.5]]
 		},
 		{
 			"name": "I",
