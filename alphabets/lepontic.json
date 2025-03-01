@@ -97,13 +97,13 @@
 		{
 			"name": "S",
 			"variant": 1,
-			"incomplete": true,
 			"transcription": "s",
-			"strokes": [[0.2, 0, 0.8, 0.3], [0.8, 0.3, 0.2, 0.7], [0.2, 0.7, 0.8, 1]]
+			"strokes": [[0.8, 0, 0.2, 0.3], [0.2, 0.3, 0.8, 0.7], [0.8, 0.7, 0.2, 1]]
 		},
 		{
 			"name": "S",
 			"variant": 2,
+			"incomplete": true,
 			"transcription": "s",
 			"strokes": [[0.2, 0, 0.8, 0.3], [0.8, 0.3, 0.2, 0.7], [0.2, 0.7, 0.8, 1]]
 		},
