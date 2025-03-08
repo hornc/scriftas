@@ -79,7 +79,7 @@ def fname(script, letter, variant=1):
 
 
 def output_markdown(json):
-    glyphs = ''.join(['![%s](./%s) ' % (a['name'], fname(json['name'], a['name'], a.get('variant', 1))) for a in json['letters']])
+    glyphs = ' '.join([f"![{a['name']}](./{fname(json['name'], a['name'], a.get('variant', 1))})" for a in json['letters']])
     body = f"""# {json['name']}
 The SVG glyphs in this directory are licensed under a {json['license']} license.
 
